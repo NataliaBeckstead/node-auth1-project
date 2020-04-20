@@ -12,7 +12,7 @@ function App() {
       <Switch>
         {/* <PrivateRoute path="/dashboard" component={Dashboard}/> */}
         <Route exact path='/' component={LoginPage} />
-        {/* <Route path='/sign-up-page' component={SignUpPage} /> */}
+        <Route path='/sign-up-page' component={SignUpPage} />
       </Switch>
     </div>
   );

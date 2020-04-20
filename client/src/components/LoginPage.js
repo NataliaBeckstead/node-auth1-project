@@ -18,13 +18,18 @@ function LoginPage() {
         console.log(response);
         //history.push('/Dashboard')
     })
-    .catch(err => console.log(err)); 
+    .catch(err => {
+        alert('Wrong username or password!')
+        console.log(err)
+    }); 
   }
 
   return (
     <div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="login-form">
+        <h2>Login page</h2>
+
+        <form onSubmit={handleSubmit(onSubmit)} className="login-form">
 
         <label htmlFor="username">Username:&#8201;&#8201;&#8201;
           <input
