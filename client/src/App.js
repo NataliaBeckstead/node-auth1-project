@@ -4,15 +4,15 @@ import { Route, Switch } from 'react-router-dom';
 
 import SignUpPage from './components/SignUpPage';
 import LoginPage from './components/LoginPage';
-import PrivateRoute from './components/PrivateRoute.js';
+import Users from './components/Users.js';
 
 function App() {
   return (
     <div className="App">
       <Switch>
-        {/* <PrivateRoute path="/dashboard" component={Dashboard}/> */}
         <Route exact path='/' component={LoginPage} />
         <Route path='/sign-up-page' component={SignUpPage} />
+        <Route path='/users' component={Users} />
       </Switch>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
-import axios from 'axios';
+import axios from "../utils/axios";
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ function LoginPage() {
     axios.post('http://localhost:5000/api/auth/login', value)
     .then(response => {
         console.log(response);
-        //history.push('/Dashboard')
+        history.push('/users')
     })
     .catch(err => {
         alert('Wrong username or password!')

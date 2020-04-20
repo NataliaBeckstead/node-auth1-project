@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import axios from "../utils/axios";
 
 function SignUpPage (props) {
   const {handleSubmit, register, errors, reset} = useForm();
